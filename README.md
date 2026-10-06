@@ -6,7 +6,7 @@ An Omarchy theme celebrating Starship's flight to orbit: white text on lightly f
 
 ![Starship To Orbit by night](preview-night.png)
 
-By day and by night: the [cliamp](https://github.com/bjarneo/cliamp) music visualizer, [Flea](https://github.com/ejuro/flea), Neovim and, at night, btop and Claude Code, using Starship To Orbit with the full glass effect.
+By day and by night: the [cliamp](https://github.com/bjarneo/cliamp) music visualizer, [Flea](https://github.com/erikrjohansson/flea), Neovim and, at night, btop and Claude Code, using Starship To Orbit with the full glass effect.
 
 ## At a glance
 
@@ -49,7 +49,7 @@ The night versions are AI-edited from the photographs above, not photographs of 
 ## Install
 
 ```bash
-omarchy theme install https://github.com/ejuro/omarchy-starship-to-orbit-theme.git
+omarchy theme install https://github.com/erikrjohansson/omarchy-starship-to-orbit-theme.git
 ```
 
 Tested on Omarchy **4.0.4**.
@@ -59,7 +59,7 @@ Tested on Omarchy **4.0.4**.
 Omarchy skips Lua and terminal configs from installed themes for safety, so the command above gives you the palette, the plume window edges, the translucent shell and the btop graphs, but not the frosted glass. To add the glass, read [`hyprland.lua`](hyprland.lua), [`neovim.lua`](neovim.lua) and the terminal configs, then run:
 
 ```bash
-git clone https://github.com/ejuro/omarchy-starship-to-orbit-theme.git ~/.local/share/omarchy-starship-to-orbit-theme
+git clone https://github.com/erikrjohansson/omarchy-starship-to-orbit-theme.git ~/.local/share/omarchy-starship-to-orbit-theme
 rm -rf ~/.config/omarchy/themes/starship-to-orbit
 ln -s ~/.local/share/omarchy-starship-to-orbit-theme ~/.config/omarchy/themes/starship-to-orbit
 omarchy theme set starship-to-orbit
@@ -68,7 +68,7 @@ omarchy theme set starship-to-orbit
 That adds:
 
 - Lightly frosted windows: the launch stays recognisable behind them, only fine detail is softened.
-- Terminals with a translucent background and fully opaque text; [Omawrite](https://github.com/ejuro/omawrite) and [Flea](https://github.com/ejuro/flea) turn to glass too. Everything else stays opaque.
+- Terminals with a translucent background and fully opaque text; [Omawrite](https://github.com/erikrjohansson/omawrite) and [Flea](https://github.com/erikrjohansson/flea) turn to glass too. Everything else stays opaque.
 - Large squircle corners and the faintest warm glow on the focused window.
 - The same frosting on the launcher, menus, notifications, OSD and polkit dialogs.
 - Code in Neovim in the colours of the plume.
