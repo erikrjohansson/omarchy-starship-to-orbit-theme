@@ -30,7 +30,6 @@ As installed with `omarchy theme install`, without the glass.
 **Separate and optional:**
 
 - [Ghostty as the default terminal](#full-glass-effect-optional), so terminals are frosted rather than clear.
-- [Martian Mono](#recommended-font-optional), the font the theme was made with.
 - A [cliamp theme](#extras) that draws the music visualizer as the plume.
 
 ## Backgrounds
@@ -95,15 +94,6 @@ omarchy theme set starship-to-orbit
 ```
 
 Setting the theme again is what brings in new backgrounds and changes; it also resets the wallpaper to the first background.
-
-### Recommended font (optional)
-
-The theme was made with Martian Mono, a wide, geometric typeface with a mission-control feel:
-
-```bash
-omarchy pkg add ttf-martian-mono-nerd
-omarchy font set "MartianMono Nerd Font"
-```
 
 ## Extras
 
