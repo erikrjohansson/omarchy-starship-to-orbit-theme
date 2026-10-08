@@ -4,11 +4,9 @@
 
 `backgrounds/1-starbase.jpg` and `backgrounds/2-liftoff.jpg` are photographs of Starship launches by SpaceX, published on SpaceX's account on X ([@SpaceX](https://x.com/SpaceX)). `1-starbase.jpg` has its top edge slightly darkened so a transparent Omarchy bar stays legible.
 
-`backgrounds/5-morning-pad.jpg` is a photograph of a Starship launch by SpaceX, converted from CMYK to sRGB, with its top edge slightly darkened so a transparent Omarchy bar stays legible.
+`backgrounds/3-morning-pad.jpg` is a photograph of a Starship launch by SpaceX, converted from CMYK to sRGB, with its top edge slightly darkened so a transparent Omarchy bar stays legible.
 
-`backgrounds/3-starbase-night.jpg` and `backgrounds/4-liftoff-night.jpg` are AI-edited night versions of those two photographs: they were relit as night scenes with an image-generation model. They are not photographs of real night launches.
-
-All five backgrounds were upscaled to 6016 × 3384 with [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (BSD-3-Clause), a super-resolution model that sharpens existing detail rather than generating new content, then resized with Lanczos. The model itself is not included in this theme.
+All three backgrounds were upscaled to 6016 × 3384 with [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (BSD-3-Clause), a super-resolution model that sharpens existing detail rather than generating new content, then resized with Lanczos. The model itself is not included in this theme.
 
 SpaceX retains all rights to the original photographs. None of the background images are covered by this theme's MIT license.
 

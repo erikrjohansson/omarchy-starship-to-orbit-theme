@@ -1,12 +1,10 @@
 # Starship To Orbit
 
-An Omarchy theme celebrating Starship's flight to orbit: white text on lightly frosted liquid glass over the launch, by day or by night, with the Raptor plume as the one colour that runs through it all.
+An Omarchy theme celebrating Starship's flight to orbit: white text on lightly frosted liquid glass over the launch, with the Raptor plume as the one colour that runs through it all.
 
-![Starship To Orbit by day](preview.png)
+![Starship To Orbit](preview.png)
 
-![Starship To Orbit by night](preview-night.png)
-
-By day and by night: the [cliamp](https://github.com/bjarneo/cliamp) music visualizer, [Flea](https://github.com/erikrjohansson/flea), Neovim and, at night, btop and Claude Code, using Starship To Orbit with the full glass effect.
+The [cliamp](https://github.com/bjarneo/cliamp) music visualizer, [Flea](https://github.com/erikrjohansson/flea) and Neovim, using Starship To Orbit with the full glass effect.
 
 ## At a glance
 
@@ -16,7 +14,7 @@ By day and by night: the [cliamp](https://github.com/bjarneo/cliamp) music visua
 - Plume-edged windows.
 - A translucent glass shell: bar, launcher, menus, notifications and lock screen.
 - btop with every graph drawn as the plume.
-- GTK colours, and five launch backgrounds in 6K: two by day, two by night, one at sunrise.
+- GTK colours, and three launch backgrounds in 6K.
 
 **Added by the optional [full glass effect](#full-glass-effect-optional)** (one extra step):
 
@@ -33,18 +31,16 @@ By day and by night: the [cliamp](https://github.com/bjarneo/cliamp) music visua
 
 ## Backgrounds
 
-Two SpaceX launch photographs, each by day and by night, and the pad at sunrise. All five are 6016 × 3384 (6K). Omarchy starts with the first; cycle through them with the background switcher (`Super + Ctrl + Space`) or `omarchy theme bg next`.
+Three SpaceX launch photographs. All three are 6016 × 3384 (6K). Omarchy starts with the first; cycle through them with the background switcher (`Super + Ctrl + Space`) or `omarchy theme bg next`.
 
 | | |
 | --- | --- |
 | [![Starbase from above](backgrounds/1-starbase.jpg)](backgrounds/1-starbase.jpg) | [![Liftoff at dusk](backgrounds/2-liftoff.jpg)](backgrounds/2-liftoff.jpg) |
 | **Starbase.** Photo: SpaceX. The launch from above, over the pad and the Gulf. The top edge is gently shaded so a transparent bar keeps white text. | **Liftoff.** Photo: SpaceX. Starship clearing the tower at dusk between walls of exhaust. |
-| [![Starbase at night](backgrounds/3-starbase-night.jpg)](backgrounds/3-starbase-night.jpg) | [![Liftoff at night](backgrounds/4-liftoff-night.jpg)](backgrounds/4-liftoff-night.jpg) |
-| **Starbase, night.** The pad and the water reflect the flame. | **Liftoff, night.** The same launch relit at night: the plume is the only light and the exhaust clouds glow from it. |
-| [![The pad at sunrise](backgrounds/5-morning-pad.jpg)](backgrounds/5-morning-pad.jpg) | |
+| [![The pad at sunrise](backgrounds/3-morning-pad.jpg)](backgrounds/3-morning-pad.jpg) | |
 | **Morning pad.** Photo: SpaceX. The stack venting on the pad at sunrise, with the Gulf behind. The top edge is gently shaded so a transparent bar keeps white text. | |
 
-The photographs were upscaled to 6K with Real-ESRGAN, which sharpens the detail already there rather than inventing new detail. The night versions are AI-edited from the photographs above, not photographs of real night launches (see [third-party notices](THIRD_PARTY_NOTICES.md)).
+The photographs were upscaled to 6K with Real-ESRGAN, which sharpens the detail already there rather than inventing new detail (see [third-party notices](THIRD_PARTY_NOTICES.md)).
 
 ## Install
 
