@@ -105,24 +105,6 @@ omarchy pkg add ttf-martian-mono-nerd
 omarchy font set "MartianMono Nerd Font"
 ```
 
-## The Raptor plume
-
-One gradient runs through the whole theme: white-hot `#fff3dc` → engine flame `#ff9f0a` → red-orange `#ff4f1f`. It edges the focused window and the shell's panels, draws every graph in btop, and drives the cliamp visualizer (see [Extras](#extras)). The terminal and Neovim take the plume's colours, set against the blue of the launch sky:
-
-| Role | Colour | Used for |
-| --- | --- | --- |
-| Engine flame | `#ff9f0a` | Accent, prompt, selected items, strings, executables, the About logo |
-| Amber | `#ffc27a` | Types, warnings |
-| Ember | `#ff6a3d` | Numbers |
-| Sky blue | `#8fb8de` | Functions, folders |
-| Ice blue | `#a6dcef` | Symlinks, macros |
-| Exhaust pink | `#ff8fa3` | Keywords |
-| Red | `#ff5f4a` | Errors, removed lines |
-| Text | `#f5f5f7` | |
-| Secondary text | `#98989d` | |
-| Surfaces | `#1c1c1e` | Solid when installed, see-through with the full glass effect |
-| Selection | `#3a3a3c` | |
-
 ## Extras
 
 [`extras/cliamp/starship-to-orbit.toml`](extras/cliamp/starship-to-orbit.toml) is a matching theme for the [cliamp](https://github.com/bjarneo/cliamp) music player. Its visualizer is drawn as the plume: white-hot at the base, engine flame through the middle, red-orange at the tips.
