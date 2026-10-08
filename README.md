@@ -1,27 +1,31 @@
 # Starship To Orbit
 
-An Omarchy theme celebrating Starship's flight to orbit: white text on lightly frosted liquid glass over the launch, with the Raptor plume as the one colour that runs through it all.
+An Omarchy theme celebrating Starship's flight to orbit: the colours of the Raptor plume and the launch sky over 6K launch photographs, with optional frosted glass.
 
-![Starship To Orbit](preview.png)
+![Starship To Orbit with the full glass effect](preview.png)
 
-The [cliamp](https://github.com/bjarneo/cliamp) music visualizer, [Flea](https://github.com/erikrjohansson/flea) and Neovim, using Starship To Orbit with the full glass effect.
+With the [full glass effect](#full-glass-effect-optional): the [cliamp](https://github.com/bjarneo/cliamp) music visualizer, Claude Code and Neovim in Ghostty.
+
+![Starship To Orbit as installed](preview-plain.png)
+
+As installed with `omarchy theme install`, without the glass.
 
 ## At a glance
 
 **Included with the install command:**
 
-- The palette: white and grey text, with the Raptor plume (white-hot → engine flame → red-orange) as the one colour.
-- Plume-edged windows.
-- A translucent glass shell: bar, launcher, menus, notifications and lock screen.
+- The palette: the Raptor plume (engine flame, amber, ember) and the launch sky (sky blue, ice blue) over white and grey text.
+- Plume-edged windows, and a bar, launcher, menus, notifications and lock screen edged by the plume.
+- The same colours in the terminal, Neovim and the About screen.
 - btop with every graph drawn as the plume.
 - GTK colours, and three launch backgrounds in 6K.
 
 **Added by the optional [full glass effect](#full-glass-effect-optional)** (one extra step):
 
-- Lightly frosted windows and shell panels, with the launch showing through.
+- Lightly frosted windows, with the launch showing through.
+- A see-through, frosted bar and shell panels.
 - Translucent terminals with fully opaque text.
 - Squircle corners and a faint warm glow.
-- Code in Neovim in the colours of the plume.
 
 **Separate and optional:**
 
@@ -52,7 +56,7 @@ Tested on Omarchy **4.0.4**.
 
 ### Full glass effect (optional)
 
-Omarchy skips Lua and terminal configs from installed themes for safety, so the command above gives you the palette, the plume window edges, the translucent shell and the btop graphs, but not the frosted glass. To add the glass, read [`hyprland.lua`](hyprland.lua), [`neovim.lua`](neovim.lua) and the terminal configs, then run:
+Omarchy skips Lua and terminal configs from installed themes for safety, so the command above gives you the palette, the plume edges, the shell and the btop graphs, but not the frosted glass. To add the glass, read [`hyprland.lua`](hyprland.lua), the terminal configs and the `shell.*.toml` links to [`extras/glass`](extras/glass), then run:
 
 ```bash
 git clone https://github.com/erikrjohansson/omarchy-starship-to-orbit-theme.git ~/.local/share/omarchy-starship-to-orbit-theme
@@ -66,8 +70,7 @@ That adds:
 - Lightly frosted windows: the launch stays recognisable behind them, only fine detail is softened.
 - Terminals with a translucent background and fully opaque text; [Omawrite](https://github.com/erikrjohansson/omawrite) and [Flea](https://github.com/erikrjohansson/flea) turn to glass too. Everything else stays opaque.
 - Large squircle corners and the faintest warm glow on the focused window.
-- The same frosting on the launcher, menus, notifications, OSD and polkit dialogs.
-- Code in Neovim in the colours of the plume.
+- The same frosting on a see-through bar, launcher, menus, notifications, OSD and polkit dialogs, and a see-through lock screen. Installed themes drop these links, so without the glass the shell stays solid enough to read over any window.
 
 Ghostty frosts the glass. Foot's translucent background is not blurred by Hyprland, so it stays clear glass; to use frosted glass everywhere, switch the default terminal:
 
@@ -104,22 +107,21 @@ omarchy font set "MartianMono Nerd Font"
 
 ## The Raptor plume
 
-One gradient runs through the whole theme: white-hot `#fff3dc` → engine flame `#ff9f0a` → red-orange `#ff4f1f`. It edges the focused window and the shell's panels, draws every graph in btop, colours code in Neovim, and drives the cliamp visualizer (see [Extras](#extras)).
-
-Everything else is white, icy white and grey, told apart by brightness rather than hue. Colour is kept for meaning:
+One gradient runs through the whole theme: white-hot `#fff3dc` → engine flame `#ff9f0a` → red-orange `#ff4f1f`. It edges the focused window and the shell's panels, draws every graph in btop, and drives the cliamp visualizer (see [Extras](#extras)). The terminal and Neovim take the plume's colours, set against the blue of the launch sky:
 
 | Role | Colour | Used for |
 | --- | --- | --- |
-| Engine flame | `#ff9f0a` | Accent, prompt, cursor, selected items, warnings |
+| Engine flame | `#ff9f0a` | Accent, prompt, selected items, strings, executables, the About logo |
+| Amber | `#ffc27a` | Types, warnings |
+| Ember | `#ff6a3d` | Numbers |
+| Sky blue | `#8fb8de` | Functions, folders |
+| Ice blue | `#a6dcef` | Symlinks, macros |
+| Exhaust pink | `#ff8fa3` | Keywords |
 | Red | `#ff5f4a` | Errors, removed lines |
-| Pale green | `#a8e6c1` | Success, added lines |
 | Text | `#f5f5f7` | |
-| Icy white · silver · warm white | `#dfe9f2` · `#c3ccd6` · `#f2eee8` | Terminal colours |
 | Secondary text | `#98989d` | |
-| Glass | `#1c1c1e` | Surfaces, at 32–60 % opacity |
+| Surfaces | `#1c1c1e` | Solid when installed, see-through with the full glass effect |
 | Selection | `#3a3a3c` | |
-
-In Neovim, keywords are engine flame, function names white-hot, strings amber `#ffc27a`, numbers red-orange `#ff6a3d` and types icy white; git signs and diagnostics keep green and red.
 
 ## Extras
 
@@ -134,7 +136,7 @@ Then press `t` in cliamp and choose `starship-to-orbit`. cliamp keeps a theme yo
 
 ## Customization
 
-The colours live in `colors.toml`. `shell.toml`, `btop.theme` and `gtk.css` carry copies, and so do the terminal configs, `hyprland.lua` and `neovim.lua` used by the full glass effect; change them together, then run `omarchy theme set starship-to-orbit`.
+The colours live in `colors.toml`; Omarchy generates Neovim and the other apps from it. `shell.toml`, `btop.theme` and `gtk.css` carry copies, and so do the terminal configs, `hyprland.lua` and `extras/glass` used by the full glass effect; change them together, then run `omarchy theme set starship-to-orbit`.
 
 The theme contains no application patches or install hooks.
 

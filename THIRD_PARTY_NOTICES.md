@@ -14,10 +14,9 @@ SpaceX retains all rights to the original photographs. None of the background im
 
 Starship To Orbit includes adaptations of [Omarchy](https://github.com/omacom/omarchy) theme templates:
 
-- `shell.toml`, adapted from `default/themed/shell.toml.tpl`.
+- `shell.toml` and `extras/glass/shell.*.toml`, adapted from `default/themed/shell.toml.tpl`.
 - `hyprland.lua`, adapted from `default/themed/hyprland.lua.tpl`.
 - `btop.theme`, adapted from `default/themed/btop.theme.tpl`.
-- `neovim.lua`, generated from `default/themed/neovim.lua.tpl`, with added syntax highlights.
 - `ghostty.conf`, `alacritty.toml`, `kitty.conf` and `foot.ini`, generated from the matching templates, with added background opacity.
 
 The following upstream MIT notice is retained for the adapted portions. Starship To Orbit's own license is in [LICENSE](LICENSE).
