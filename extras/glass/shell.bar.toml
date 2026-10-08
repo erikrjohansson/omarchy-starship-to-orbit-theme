@@ -1,0 +1,10 @@
+# Glass value, used only by the full glass effect (linked from the theme root, which
+# installed themes drop). The theme's shell.toml keeps this panel readable without blur.
+[bar]
+background       = "#1c1c1e"
+background-alpha = 0.35
+text             = "#ffffff"
+active           = "#ff9f0a"
+scale-with-font  = true
+size-horizontal  = 28
+size-vertical    = 30
