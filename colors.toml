@@ -1,7 +1,7 @@
 # Starship To Orbit: clear, neutral liquid glass over the launch, in the manner of macOS.
 # Everything is white, icy white and grey, told apart by brightness rather than hue. Colour is
 # kept for meaning: engine-flame orange (the accent, prompt, warnings), red (errors, removed
-# lines) and a pale green (success, added lines).
+# lines) and amber in place of green (success, added lines), as in Matte Black.
 mode = "dark"
 
 accent = "#ff9f0a"
